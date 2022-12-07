@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.login-section{
+    height: 100vh;
+    background-color: #A3C7D6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-section h1{
+    color: #A3C7D6;
+}
+
+.login-modal{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3F3B6C;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 5px 8px 10px;
+}
+.login-modal input{
+    margin-top: 1rem;
+    height: 30px;
+    width: 60%;
+    border-radius: 5px;
+}
+
+
+.btn{
+    background-color: #A3C7D6;
+    height: 30px;
+    margin-top: 1rem;
+    width: 80px;
+    border-radius: 3px;
+    box-shadow: 5px 8px 10px;
+}
+
+
+.btn1{
+    background-color: #A3C7D6;
+    height: 30px;
+    width: 120px;
+    border-radius: 3px;
+    box-shadow: 5px 8px 10px;
+    margin-left: .5rem;
+}
+
+
+
+/*index.html page styling was here
+*/
+
+.container{
+    max-height: 1000vh;
+    background-color: #A3C7D6;
+}
+
+.header{
+    background-color:#624F82 ;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.header img{
+    height: 40px; 
+    margin-right: .5rem;
+}
+.header h1{
+    color: #A3C7D6;
+}
+
+.books-section{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.book{
+    height: 600px;
+    width:850px;
+    background-color: #9F73AB;
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+
+}
+
+.book img{
+    height: 350px;
+}
+
+#search-bar{
+    width: 250px;
+    height: 25px;
+}
+
+
+.search-bar-res{
+    background-color: white;
+    margin-left: .5rem;
+    border-radius: 5px;
+    
+}
+
+.search-bar-res img{
+    height: 10px;
+}
+
+.search-bar-res input{
+    border: none;
+    margin-left: .5rem;
+}
+
+.btn-session{
+    width: 230px;
+}
+
+
+
+/*user session*/
+.main{
+    background-color: #A3C7D6;
+    height: 105vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.user-session{
+    background-color: #624F82;
+    height: 100%;
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.table, tr, td, th{
+    border: 1px solid black;
+    padding: .5rem;
+}
+

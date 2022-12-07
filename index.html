@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="search-bar-res">
+            <input type="text" placeholder="Search" id="search-bar"/>
+            <img src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png" alt="" class="search">
+            </div>            
+            <h1>LIBRARY</h1>
+
+            <a href="userSession.html"><img src="https://www.freeiconspng.com/thumbs/profile-icon-png/account-profile-user-icon--icon-search-engine-10.png" alt=""></a>
+            </div>
+            
+                <div class="books-section">
+                    <div class="book book1">
+                        <img src="book1.jpg" alt="">
+                        <h3 id="i1">ID :- 101</h3>
+                        <h4 id="t1">TITLE:-To Kill A Mockingbird</h4>
+                        <p>Discription :- This book is a timeless classic that discusses human behavior and the collective conscience of The Deep South during the 20th century. This book discusses hypocrisy, prejudice, hatred, love and innocence with humor to create an amazing novel that you are bound to love.</p>
+                        <p><b>STORY</b></p>
+                        <P id="p1">PRICE:499</P>
+                        <button class="btn btn-session" onclick="b1()">Add To Session</button>
+
+                    </div>
+                    <div class="book book2">
+                        <img src="book2.jpg" alt="">
+                        <h3 id="i2">ID :- 102</h3>
+                        <h4 id="t2">TITLE:-1984</h4>
+                        <p></p>
+                        <p><b></b></p>
+                        <P  id="p2">PRICE:150</P>
+                        <button class="btn btn-session" onclick="b2()">Add To Session</button>
+
+
+                    </div>
+                    <div class="book book3">
+                        <img src="book3.jpg" alt="">
+                        <h3 id="i3">ID :- 103</h3>
+                        <h4 id="t3">TITLE:-Harry Potter</h4>
+                        <p></p>
+                        <p><b></b></p>
+                        <P id="p3">PRICE:150</P>
+                        <button class="btn btn-session" onclick="b3()">Add To Session</button>
+
+                    </div>
+                    <div class="book book4">
+                        <img src="book4.jpg" alt="">
+                                                <h3 id="i4">ID :- 104</h3>
+                        <h4 id="t4">Title:-The Lord Of The Rings</h4>
+                        <p></p>
+                        <p><b></b></p>
+                        <P id="p4">PRICE:150</P>
+                        <button class="btn btn-session" onclick="b4()">Add To Session</button>
+
+                    </div>
+                    <div class="book book5">
+                        <img src="book5.jpg" alt="">
+                                                <h3 id="i5">ID :- 105</h3>
+                        <h4 id="t5">Title:-The Great Gatsby</h4>
+                        <p></p>
+                        <p><b></b></p>
+                        <P id="p5">PRICE:150</P>
+                        <button class="btn btn-session" onclick="b5()">Add To Session</button>
+
+                    </div>
+                    <div class="book book6">
+                        <img src="book6.jpg" alt="">
+                                                <h3 id="i6">ID :- 106</h3>
+                        <h4 id="t6">Title:-Pride & Prejudice</h4>
+                        <p></p>
+                        <p><b></b></p>
+                        <P id="p6">PRICE:150</P>
+                        <button class="btn btn-session" onclick="b6()">Add To Session</button>
+
+                    </div>
+                    <div class="book book7">
+                        <img src="book7.jpg" alt="">
+                                                <h3 id="i7">ID :- 107</h3>
+                        <h4 id="t7">Title:-The diary of the Young girl</h4>
+                        <p></p>
+                        <p><b></b></p>
+                        <P id="p7">PRICE:150</P>
+                        <button class="btn btn-session" onclick="b7()">Add To Session</button>
+
+                    </div>
+                    <div class="book book8">
+                        <img src="book8.jpg" alt="">
+                                     <h3 id="i8">ID :- 108</h3>
+                        <h4 id="t8">Title:-The Book Thief</h4>
+                        <p></p>
+                        <p><b></8b></p>
+                        <P id="p8">PRICE:150</P>
+                        <button class="btn btn-session" onclick="b8()">Add To Session</button>
+
+                    </div>
+                    <div class="book book9">
+                        <img src="book9.jpg" alt="">
+                                                <h3 id="i9">ID :- 109</h3>
+                        <h4 id="t9">Title:-The Hobbit</h4>
+                        <p></p>
+                        <p><b></b></p>
+                        <P id="p9">PRICE:150</P>
+                        <button class="btn btn-session" onclick="b9()">Add To Session</button>
+
+                    </div>
+                    <div class="book book10">
+                        <img src="book10.jpg" alt="">
+                                                <h3 id="i10">ID :- 110</h3>
+                        <h4 id="t10">Title:-Little Women</h4>
+                        <p></p>
+                        <p><b></b></p>
+                        <P id="p10">PRICE:150</P>
+                        <button class="btn btn-session" onclick="b10()">Add To Session</button>
+
+                    </div>
+        
+                </div>
+        </div>
+
+    
+</body>
+</html>
+
+<script>
+    $('document').ready(function(){
+   $(".search").click(function() {
+       var search=  document.getElementById("search-bar").value;
+       if(search=="to kill a mockingbird" || search=='101')
+       {
+       $('html,body').animate({
+           scrollTop: $(".book1").offset().top+(-70)},
+           'slow');
+       }
+       if(search=="1984" || search=='102')
+       {
+       $('html,body').animate({
+           scrollTop: $(".book2").offset().top+(-70)},
+           'slow');
+       }
+       if(search=="harry potter" || search=='103')
+       {
+       $('html,body').animate({
+           scrollTop: $(".book3").offset().top+(-70)},
+           'slow');
+       }
+       if(search=="the lord of the rings" || search=='104')
+       {
+       $('html,body').animate({
+           scrollTop: $(".book4").offset().top+(-70)},
+           'slow');
+       }
+       if(search=="the great gatsby" || search=='105')
+       {
+       $('html,body').animate({
+           scrollTop: $(".book5").offset().top+(-70)},
+           'slow');
+       }
+       if(search=="pride and prejudice" || search=='106')
+       {
+       $('html,body').animate({
+           scrollTop: $(".book6").offset().top+(-70)},
+           'slow');
+       }
+       if(search=="the diary of the young girl" || search=='107')
+       {
+       $('html,body').animate({
+           scrollTop: $(".book7").offset().top+(-70)},
+           'slow');
+       }
+       if(search=="the book theif" || search=='108')
+       {
+       $('html,body').animate({
+           scrollTop: $(".book8").offset().top+(-70)},
+           'slow');
+       }
+       if(search=="the hobbit" || search=='109')
+       {
+       $('html,body').animate({
+           scrollTop: $(".book9").offset().top+(-70)},
+           'slow');
+       }
+       if(search=="little women" || search=='110')
+       {
+       $('html,body').animate({
+           scrollTop: $(".book10").offset().top+(-70)},
+           'slow');
+       }
+
+   });
+
+
+
+   
+});
+
+</script>

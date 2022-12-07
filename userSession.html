@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user Session</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div>
+        <div class="header">        
+            <a href="index.html"><button class="btn1">Back to library</button></a>
+            <h1>LIBRARY</h1>
+
+            <a href="userSession.html"><img src="https://www.freeiconspng.com/thumbs/profile-icon-png/account-profile-user-icon--icon-search-engine-10.png" alt=""></a>
+            </div>
+
+            <div class="main">
+                <div class="user-session">
+                    <h1>User Cart</h1>
+                    <table class="table" width="550px">
+                        <tr id="tr">
+                            <th>Book ID </th>
+                            <th>Book Name</td>
+                            <th>Price</th>
+                            <th>Remove</th>
+                        </tr>
+                        <tr>
+                            <td id="ii1"></td>
+                            <td id="tt1"></td>
+                            <td id="pp1"></td>
+                            <td><button class="btn" onclick="remove(1)">Remove</button></td>
+                        </tr>
+                        <tr>
+                            <td id="ii2"></td>
+                            <td id="tt2"></td>
+                            <td id="pp2"></td>
+                            <td><button class="btn" onclick="remove(2)">Remove</button></td>
+                        </tr> <tr>
+                            <td id="ii3"></td>
+                            <td id="tt3"></td>
+                            <td id="pp3"></td>
+                            <td><button class="btn" onclick="remove(3)">Remove</button></td>
+                        </tr> <tr>
+                            <td id="ii4"></td>
+                            <td id="tt4"></td>
+                            <td id="pp4"></td>
+                            <td><button class="btn" onclick="remove(4)">Remove</button></td>
+                        </tr> <tr>
+                            <td id="ii5"></td>
+                            <td id="tt5"></td>
+                            <td id="pp5"></td>
+                            <td><button class="btn" onclick="remove(5)">Remove</button></td>
+                        </tr> <tr>
+                            <td id="ii6"></td>
+                            <td id="tt6"></td>
+                            <td id="pp6"></td>
+                            <td><button class="btn" onclick="remove(6)">Remove</button></td>
+                        </tr> <tr>
+                            <td id="ii7"></td>
+                            <td id="tt7"></td>
+                            <td id="pp7"></td>
+                            <td><button class="btn" onclick="remove(7)">Remove</button></td>
+                        </tr> <tr>
+                            <td id="ii8"></td>
+                            <td id="tt8"></td>
+                            <td id="pp8"></td>
+                            <td><button class="btn" onclick="remove(8)">Remove</button></td>
+                        </tr> <tr>
+                            <td id="ii9"></td>
+                            <td id="tt9"></td>
+                            <td id="pp9"></td>
+                            <td><button class="btn" onclick="remove(9)">Remove</button></td>
+                        </tr> <tr>
+                            <td id="ii10"></td>
+                            <td id="tt10"></td>
+                            <td id="pp10"></td>
+                            <td><button class="btn" onclick="remove(10)">Remove</button></td>
+                        </tr>
+                    
+                    </table>
+                </div>
+            </div>
+    </div>
+    
+</body>
+</html>
+<script>
+    window.onload = function(){
+
+    for(var i=1;i<=10;i++)
+    {
+    document.getElementById('ii'+i).innerHTML = localStorage.getItem("i"+i);
+    document.getElementById('tt'+i).innerHTML = localStorage.getItem("t"+i);
+    document.getElementById('pp'+i).innerHTML = localStorage.getItem("p"+i);
+    }
+       
+}
+
+    function remove(e){
+    localStorage.removeItem("i"+e);
+    localStorage.removeItem("t"+e);
+    localStorage.removeItem("p"+e);
+
+    document.getElementById("ii"+e).innerHTML="";
+    document.getElementById("tt"+e).innerHTML="";
+    document.getElementById("pp"+e).innerHTML="";
+}
+</script>
